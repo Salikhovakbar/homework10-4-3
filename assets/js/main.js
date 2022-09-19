@@ -21,5 +21,5 @@ widthEl.addEventListener("input", width);
 heightEl.addEventListener("input", height);
 filterEl.addEventListener("input", filterBrightness);
 borderEL.addEventListener("input", () => {
-    photoEl.classList.toggle("containerborder")
+    photoEl.style.filter = `contrast(${borderEL.value *10}%)`
 });
